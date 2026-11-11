@@ -1,0 +1,12 @@
+[Unit]
+Description=Rise Mode Aura Ice CPU temperature display
+After=systemd-modules-load.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/libexec/rise-aio-monitor.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

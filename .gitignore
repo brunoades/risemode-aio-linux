@@ -1,0 +1,19 @@
+# Kernel module build output
+*.o
+*.ko
+*.mod
+*.mod.c
+.*.cmd
+Module.symvers
+modules.order
+.tmp_versions/
+.cache.mk
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local agent and credential directories
+.agents/
+.aws/
+.codex/
